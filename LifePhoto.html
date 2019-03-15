@@ -60,6 +60,22 @@ footer {
   color: white;
 }
 
+img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 400px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
   nav, article {
@@ -85,10 +101,20 @@ footer {
   </nav>
   
   <article>
-    <h1>美國行 2017/9/1~2017/9/10</h1>
-    <image src="./201791-99_180307_0263.jpg"style="width:350px;height:400px" style="width:100%;"><p style = "color : indigo;">New York</a>
-    <p>趁著上大學開始之前，和家人去了一趟紐約，是個很棒的旅行呢 </p>
-  </article>
+<h1>美國行 2017/9/1~2017/9/10</h1>
+<p>趁著上大學開始之前，和家人去了一趟紐約，是個很棒的旅行呢 </p>
+
+ <div class="gallery">
+    <a target="_blank" href="./201791-99_180307_0263.jpg">
+    <img src="./201791-99_180307_0263.jpg"style="width:350px;height:400px;"><p style = "color : indigo;">New York</a> 
+</div>
+
+<div class="gallery">
+    <a target="_blank" href="./201791-99_190315_0408.jpg">
+    <img src="./201791-99_190315_0408.jpg"style="width:350px;height:400px;"><p style = "color : indigo;">Niagara Falls</a> 
+</div>
+
+</article>
 </section>
 
 <footer>
